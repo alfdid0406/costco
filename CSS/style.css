@@ -68,26 +68,40 @@ header>#nav>#menu>li>a:hover{
 
 #content>#slider{
     overflow: hidden;
+    position: relative;
 }
 #content>#slider>#slides{
     display: flex;
+    transition: 1s ease-in-out;
 }
-#content>#slider>#slides>.slide{
+#content>#slider>#slides>a{
+    display: block;
     min-width: 100%;
 }
-#content>#slider>#slides>.slide>a{
-    display: block;
-}
-#content>#slider>#slides>.slide>a img{
-    display: block;
+#content>#slider>#slides>a img{
     width: 100%;
+    height: 100%;
 }
 
 
-#content>#control{
-    width: 100%;
-    height: 25px;
-    text-align: center;
+#content>#slider>button{
+    position: absolute;
+    top: 45%;
+    border: none;
+    padding: 4%;
+    font-size: 150%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#content>#slider>button:hover{
+    font-size: 200%;
+}
+#content>#slider>#prev{
+    left: 0;
+}
+#content>#slider>#next{
+    right: 0;
 }
 
 
